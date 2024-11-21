@@ -13,8 +13,19 @@
 </head>
 <body>
   <h1>Video Chat</h1>
-  <video id="localVideo" autoplay></video>
-  <video id="remoteVideo" autoplay></video>
+  <input id="username" type="text" placeholder="Enter your username">
+  <button id="join-btn">Join</button>
+  <div class="video-container">
+    <video id="localVideo" autoplay></video>
+    <span>Local (You)</span>
+    <video id="remoteVideo" autoplay></video>
+    <span>Remote (Peer)</span>
+  </div>
+  <div class="chat-container">
+    <ul id="chat-log"></ul>
+    <input id="chat-input" type="text" placeholder="Type a message...">
+    <button id="send-msg-btn">Send</button>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
